@@ -1,0 +1,80 @@
+* { 
+    box-sizing: border-box;
+    vertical-align:middle;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.body-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+.body-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.body-header > div {
+    display: inline-block;
+}
+.body-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px); /* This hack have needs refactoring */
+}
+.body-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.body-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+.body-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+.body-nav__item a:hover,
+.body-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+.body-nav__item_cta a { /*cta stands for click target action */
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.body-nav__item_cta a:hover,
+.body-nav__item_cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+#main-section__product-overview {
+    background: url("freedom.jpg");
+    width: 100%; /* the default value for the block element */
+    height: 528px;
+    padding: 10px;   
+}
+
+#main-section_product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+#main-section__plans p::first-letter { /* pseudo element*/
+    color: red;
+}
+.main-section-h1__title::first-line { /* pseudo class*/
+    color: aqua;
+}
