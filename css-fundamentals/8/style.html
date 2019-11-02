@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+  	<title>The complete book of cheese: Contact Us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+  	<div class="wrapper">
+
+  	<header class="mainheader">
+  		<h1 class="book-title">The Complete Book of Cheese</h1>
+  		<nav>
+  			<ul class="clr">
+  				<li><a href="ch1.html">I Remember Cheese</a></li>
+  				<li><a href="ch2.html">The Big Cheese</a></li>
+  				<li><a href="ch3.html">Foreign Greats</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+
+  	
+
+	  	<div class="content">
+	  		<header>
+	  			<h1 class="chapter-title">Contact Us</h1>
+	  			
+	  		</header>
+
+	  		<form method="post" action="my_script.php" id="contactform" enctype="multipart/form-data" class="forms">
+	  			<div>
+					<label for="firstname">First name</label> 
+					<input type="text" name="first_name" required="required" id="firstname">
+				</div>
+				<div>
+					<label for="email">Email</label> 
+					<input type="email" name="email" required="required" placeholder="example@example.com" id="email">
+				</div>
+				<div>
+					<label for="photo">Upload a photo</label>
+					<input name="photo" type="file" id="photo">
+				</div>
+				<div>
+					<label for="message">Message</label> 
+					<textarea name="message" id="message" cols="40" rows="10"></textarea>
+				</div>
+				<fieldset class="radio"><legend>Do you like cheese?</legend>
+					<input type="radio" name="like_cheese" value="yes" checked="checked" id="cheese-yes"> <label for="cheese-yes">Yes</label>
+					<input type="radio" name="like_cheese" value="no" id="cheese-no"> <label for="cheese-no">No</label>
+				</fieldset>
+				<div><label for="fav">Choose your favorite cheese</label>
+					<select name="fav" id="fav">
+						<optgroup label="blues">
+							<option value="stilton">Stilton</option>
+							<option value="bathblue">Bath Blue</option>
+							<option value="shropshireblue">Shropshire Blue</option>
+						</optgroup>
+						<optgroup label="soft">
+							<option value="brie">Brie</option>
+							<option value="camembert">Camembert</option>
+						</optgroup>
+					</select>
+				</div>
+				<div>
+					<label for="mailing">Add to mailing list?</label> <input name="mailing" type="checkbox" value="true" id="mailing">
+				</div>
+	  			<div>
+	  				<input type="hidden" name="form" value="contact_form">
+	  				<input type="submit" value="Send the form!">
+	  			</div>
+	  		</form>
+
+	  	</div>
+
+	  	<aside class="sidebar">
+	  		<h2>Buy some cheese!</h2>
+
+	  		<ul class="links">
+	  			<li><a href="http://www.thecheeseshed.com/">The Cheese Shed</a></li>
+	  			<li><a href="http://www.finecheese.co.uk/">The Fine Cheese Company</a></li>
+	  			<li><a href="https://www.pongcheese.co.uk/">Pong Cheese</a></li>
+	  		</ul>
+
+	  	</aside>
+	
+  	
+  	</div>
+  	
+  </body>
+
+</html>
